@@ -29,7 +29,10 @@ defmodule ChoraleApi.Mixfile do
   defp deps do
     [
 		{:plug, "~> 1.4"},
-		{:cowboy, "~> 1.1"}
+		{:cowboy, "~> 1.1"},
+		{:mongodb, "~> 0.4.3"},
+		{:ueberauth, "~> 0.5.0"},
+		{:ueberauth_identity, "~> 0.2.3"}
 	]
   end
 end
