@@ -27,6 +27,9 @@ defmodule ChoraleApi.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+		{:plug, "~> 1.4"},
+		{:cowboy, "~> 1.1"}
+	]
   end
 end
