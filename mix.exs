@@ -15,7 +15,7 @@ defmodule ChoraleApi.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
 	[
-		applications: [:logger,:mongodb, :poolboy, :plug, :cowboy],
+		applications: [:logger, :mongodb, :poolboy, :plug, :cowboy],
 		mod: {ChoraleApi.Supervisor, []}
 	]
   end
@@ -34,8 +34,6 @@ defmodule ChoraleApi.Mixfile do
 		{:plug, "~> 1.4"},
 		{:cowboy, "~> 1.1"},
 		{:mongodb, "~> 0.4.3"},
-		{:ueberauth, "~> 0.5.0"},
-		{:ueberauth_identity, "~> 0.2.3"},
 		{:poolboy, "~> 1.5"}
 	]
   end
