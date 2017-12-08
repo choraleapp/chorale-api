@@ -28,3 +28,17 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+
+config :mailer,smtp_client: [
+	{:server, "mx server hostname"},
+	{:hostname, "mx server hostname"},
+	{:username, "mx server username"},
+	{:password, "mx server password"},
+	{:transport, :smtp},
+	{:ssl, true},
+	{:port, 465},
+	{:retries, 3} ]
+
+config :chorale_api, email: "noreply@example.com"
+config :chorale_api, validation_url: "https://example.com/validate?challenge="

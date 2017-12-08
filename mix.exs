@@ -34,6 +34,7 @@ defmodule ChoraleApi.Mixfile do
 		{:plug, "~> 1.4"},
 		{:cowboy, "~> 1.1"},
 		{:mongodb, "~> 0.4.3"},
+		{:mailer, "~> 1.3"},
 		{:poolboy, "~> 1.5"}
 	]
   end
